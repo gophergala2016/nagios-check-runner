@@ -7,3 +7,7 @@ ExecStart=/opt/ncr/ncr --config /etc/ncr/ncr.yml
 KillMode=process
 Restart=always
 User=ncr
+
+[Install]
+WantedBy=multi-user.target
+Alias=ncr.service
